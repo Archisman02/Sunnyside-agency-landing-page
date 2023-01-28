@@ -1,0 +1,595 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+#body-header {
+  width: 100%;
+  height: 70vh;
+  background-image: url(./images/desktop/image-header.jpg);
+  /* background-repeat: no-repeat; */
+  background-position: bottom;
+  background-attachment: scroll;
+  background-size: cover;
+  /* border: 1px solid black; */
+}
+
+#nav-container {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  /* border: 1px solid black; */
+  /* margin: 10px 20px 0 20px; */
+  position: relative;
+  /* margin-left: 20px; */
+}
+
+#company-name {
+  font-size: 3rem;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  margin-left: 50px;
+  /* position: absolute; */
+  /* left: 2%; */
+}
+
+#link-button-container {
+  /* margin-top: 5px; */
+  /* display: flex;
+  justify-content: space-around; */
+  /* border: 1px solid black; */
+  width: 40%;
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  /* z-index: 1; */
+}
+
+.hidden-menu {
+  position: absolute;
+  /* right: 2%; */
+  left: 8%;
+  /* border: 1px solid black; */
+  top: 150%;
+  display: none;
+  background-color: white;
+  width: 80%;
+  height: 350px;
+  /* color: black; */
+}
+
+#horizontal-list {
+  /* margin: 100px; */
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#horizontal-list li {
+  display: inline-block;
+}
+
+#horizontal-list li a {
+  text-decoration: none;
+  /* background-color: black; */
+  color: hsl(0, 0%, 100%);
+  /* color: black; */
+  font-size: 1.7rem;
+  /* margin-right: 50px;
+  margin-left: 70px; */
+}
+
+#vertical-list {
+  /* margin: 100px; */
+  list-style: none;
+  text-align: center;
+}
+
+#vertical-list li {
+  margin-bottom: 60px;
+}
+
+#vertical-list li a {
+  text-decoration: none;
+  /* color: hsl(0, 0%, 100%); */
+  background-color: white;
+  color: gray;
+  font-size: 3rem;
+}
+
+#contact-button {
+  display: inline;
+  background-color: hsl(0, 0%, 100%);
+  border: 0px;
+  padding: 15px;
+  border-radius: 30px;
+  font-weight: 700;
+  /* margin-left: 50px; */
+  cursor: pointer;
+}
+
+#vertical-list #contact-button {
+  margin-left: 0;
+  background-color: antiquewhite;
+  color: orange;
+  cursor: pointer;
+}
+
+#header-text {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  word-spacing: 20px;
+  /* font-weight: 700; */
+  color: hsl(0, 0%, 100%);
+  margin-top: 75px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#arrow {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+}
+
+#hamburger {
+  position: absolute;
+  top: 15%;
+  right: 2%;
+  display: none;
+  cursor: pointer;
+}
+
+/* Info Section */
+
+.info-container {
+  display: flex;
+  height: 60vh;
+  /* border: 1px solid black; */
+}
+
+.info-container-2 {
+  display: flex;
+  height: 60vh;
+  /* border: 1px solid black; */
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  /* border: 1px solid black; */
+}
+
+.text {
+  width: 50%;
+}
+
+/* .img-container {
+  width: 50%;
+  height: 50vh;
+} */
+
+/* .img-container {
+  background-image: url(./images/desktop/image-transform.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
+.img-container {
+  background-image: url("./images/desktop/image-transform.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+.img-container-2 {
+  background-image: url("./images/desktop/image-stand-out.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+/* Font Family  */
+
+.font-barlow {
+  font-family: "Barlow", serif;
+  font-weight: 600;
+}
+
+/* 4th Section */
+#image-info-container {
+  display: flex;
+  /* height: 80vh; */
+}
+
+#image-info {
+  width: 50%;
+  height: 68vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: flex-end; */
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+#image-info2 {
+  width: 50%;
+  height: 68vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: flex-end; */
+  background-image: url(./images/desktop/image-photography.jpg);
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+.info {
+  width: 50%;
+  text-align: center;
+  /* border: 1px solid black; */
+  font-size: 2rem;
+  position: absolute;
+  left: 25%;
+  bottom: 5%;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+/* Client Review Section */
+
+#client-review {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #client-review h3 {
+  text-align: center;
+} */
+
+#client-review-container {
+  width: 70%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  /* margin: auto; */
+  /* border: 1px solid black; */
+  /* margin-top: 12%; */
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+#review-text {
+  font-size: 2rem;
+}
+
+#name-info {
+  font-size: 2rem;
+}
+
+#client-img img {
+  border-radius: 50%;
+}
+
+/* 5th Section */
+
+#image-info3 {
+  width: 25%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+#image-info4 {
+  width: 25%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(./images/desktop/image-gallery-orange.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#image-info5 {
+  width: 25%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(./images/desktop/image-gallery-cone.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#image-info6 {
+  width: 25%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Contact Section */
+
+#contact-section {
+  background-color: hsl(168, 34%, 41%);
+  opacity: 85%;
+  height: 30vh;
+}
+
+#contact-section-container {
+  margin: auto;
+  /* border: 1px solid black; */
+  width: 100%;
+}
+
+#link-container {
+  /* border: 1px solid black; */
+  width: 30%;
+}
+
+.review-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+/* @media screen and (max-width: 992px) {
+  #hamburger {
+    display: block;
+  }
+
+  #link-button-container {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  #company-name {
+    margin-left: 0;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  #link-button-container {
+    display: none;
+  }
+
+  #link-container {
+    width: 60%;
+  }
+
+  #image-info-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #image-info3 {
+    width: 50%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  #image-info4 {
+    width: 50%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(./images/mobile/image-gallery-orange.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  #image-info5 {
+    width: 50%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(./images/mobile/image-gallery-cone.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  #image-info6 {
+    width: 50%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  #client-review {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+  }
+
+  #client-review-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* margin: auto; */
+    /* border: 1px solid black; */
+    /* margin-top: 12%; */
+  }
+
+  .review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    /* border: 1px solid black; */
+  }
+
+  #review-text {
+    font-size: 2rem;
+  }
+
+  #name-info {
+    font-size: 2rem;
+  }
+
+  #client-img img {
+    border-radius: 50%;
+  }
+
+  #image-info-container {
+    display: flex;
+  }
+
+  #image-info {
+    width: 100%;
+    height: 58vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-end; */
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+  }
+
+  #image-info2 {
+    width: 100%;
+    height: 58vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-end; */
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 80vh;
+    /* border: 1px solid black; */
+  }
+
+  .info-container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    /* border: 1px solid black; */
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    /* border: 1px solid black; */
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .img-container {
+    background-image: url("./images/mobile/image-transform.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50%;
+  }
+
+  .img-container-2 {
+    background-image: url("./images/mobile/image-stand-out.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50%;
+  }
+
+  #body-header {
+    width: 100%;
+    height: 60vh;
+    background-image: url(./images/mobile/image-header.jpg);
+    /* background-repeat: no-repeat; */
+    background-position: bottom;
+    background-attachment: scroll;
+    background-size: cover;
+    /* border: 1px solid black; */
+  }
+}
